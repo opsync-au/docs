@@ -41,3 +41,24 @@ Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/sett
 
 ### Resources
 - [Mintlify documentation](https://mintlify.com/docs)
+
+## Updating Legal Documents
+
+Legal pages (Terms and Conditions, Privacy Policy, etc.) are generated from Word documents using [mammoth](https://www.npmjs.com/package/mammoth).
+
+1. Place updated `.docx` files in the `content/` directory.
+
+2. Run mammoth to convert to HTML:
+   ```bash
+   npx mammoth "content/Your Document.docx" --output-dir=./content
+   ```
+
+3. The output will need manual cleanup to convert to MDX format:
+   - Convert HTML/markdown to proper heading structure (`## `, `### `)
+   - Fix numbered and nested lists
+   - Clean up escaped characters
+   - Add frontmatter (title, description)
+
+4. Save the cleaned-up content as an `.mdx` file in the `legal/` directory.
+
+5. Add the page to `docs.json` navigation under the Policies tab if it's a new page.

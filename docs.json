@@ -53,6 +53,18 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Policies",
+        "groups": [
+          {
+            "group": "Policies",
+            "pages": [
+              "legal/terms",
+              "legal/security"
+            ]
+          }
+        ]
       }
     ],
     "global": {

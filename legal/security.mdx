@@ -1,0 +1,115 @@
+---
+title: "Security"
+description: "How OpSync protects your practice and patient data"
+---
+
+OpSync is built with security at its core. As a platform handling sensitive healthcare data, we take our responsibility to protect your information seriously.
+
+## Infrastructure Security
+
+### Hosting Partners
+
+OpSync is built on industry-leading cloud infrastructure providers:
+
+- **Supabase** - Database hosting with enterprise-grade PostgreSQL, automatic backups, and encryption at rest
+- **Fly.io** - Application hosting with isolated compute instances and global edge deployment
+- **Vercel** - Frontend hosting with automatic HTTPS, DDoS protection, and edge caching
+
+Database hosting is located in Australian data centres to maintain data sovereignty.
+
+### Network Security
+
+- All data transmitted between your browser and our servers is encrypted using TLS 1.2+
+- API endpoints are protected against common attack vectors (SQL injection, XSS, CSRF)
+- Regular security updates and patching of all infrastructure components
+
+## Access Controls
+
+### Production Data Access
+
+Production data access is restricted to essential personnel only. Access is:
+
+- Granted on a need-to-know basis
+- Logged and auditable
+- Reviewed periodically
+
+### Authentication
+
+- **Practice users:** Secure authentication with session management
+- **Patient accounts:** Multi-factor authentication (MFA) available for patient portal access
+- **Admin users:** Role-based access controls limiting actions based on user permissions
+
+## Data Protection
+
+### Encryption
+
+- **In transit:** All data encrypted using TLS 1.2+
+- **At rest:** Database encryption using AES-256
+
+### Backups
+
+- Automated daily backups with point-in-time recovery
+- Backups managed by Supabase infrastructure
+
+### Data Retention
+
+- Your data remains yours and is retained while your account is active
+- We retain only what is required for legal and regulatory compliance
+
+## Monitoring & Incident Response
+
+### Application Monitoring
+
+- Error tracking and session replay across all applications
+- Structured application logging with request tracing
+- Queue job monitoring with automated failure alerts
+- Periodic health checks on database connectivity and system status
+
+### Incident Response
+
+We maintain documented incident response procedures and will notify affected practices within 72 hours as required by Australian privacy law.
+
+## Compliance Roadmap
+
+We are committed to continuous improvement of our security posture:
+
+| Initiative | Status |
+|------------|--------|
+| Australian data residency | Complete |
+| Encryption at rest and in transit | Complete |
+| Role-based access controls | Complete |
+| MFA for patient accounts | Complete |
+| Penetration testing program | Planned |
+| SOC 2 Type II certification | Planned |
+| HITRUST CSF certification | Under evaluation |
+
+## Reporting Security Concerns
+
+If you discover a potential security vulnerability or have concerns about the security of the OpSync platform, please contact us immediately.
+
+### Security Contact
+
+<Card title="Report a Security Issue" icon="shield" href="mailto:security@opsync.com.au">
+  security@opsync.com.au
+</Card>
+
+### When to Contact Us
+
+- You believe you've discovered a security vulnerability in the platform
+- You notice suspicious activity on your account
+- You suspect your credentials have been compromised
+- You have questions about our security practices
+
+### What to Include
+
+When reporting a security concern, please include:
+
+- A description of the issue
+- Steps to reproduce (if applicable)
+- Your contact information for follow-up
+
+We take all reports seriously and will respond within 2 business days. We ask that you give us reasonable time to investigate and address any issues before public disclosure.
+
+## Questions
+
+For general security questions or to request additional security documentation, contact us at [security@opsync.com.au](mailto:security@opsync.com.au).
