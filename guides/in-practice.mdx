@@ -1,0 +1,118 @@
+---
+title: "In-Practice"
+description: "Admin creates and manages the booking on behalf of the patient"
+---
+
+In-Practice bookings are created and scheduled by admin staff. The patient completes their part (financial and procedure consent) but you control the appointment type and time.
+
+## Overview
+
+```mermaid
+flowchart LR
+    A[Admin creates<br/>booking] --> B[Patient receives<br/>SMS/email]
+    B --> C[Patient signs in<br/>and continues booking]
+    C --> D[Financial<br/>consent]
+    D --> E[Procedure<br/>consent]
+    E --> F[Booking<br/>consented]
+```
+
+---
+
+## Step 1: Create the booking
+
+1. Click **+ Create Booking** (in the nav or on the [Bookings](https://admin.opsync.com.au/bookings) page)
+2. Enter patient details:
+   - Name, email, mobile number, date of birth
+   - Gender
+   - Medicare number and IRN
+   - Postcode
+   - Funding arrangement (bulk billing, self fund, or private health fund)
+3. Enter procedure details:
+   - Specialist
+   - Location
+   - Procedure type
+   - Date
+   - Arrival time (optional)
+4. Click **Create Booking**
+
+![Create Booking form](/images/bookings_create.png)
+
+![Booking created confirmation](/images/bookings_created.png)
+
+<Note>Once created, the booking will have the status **Confirmed**.</Note>
+
+---
+
+## Step 2: Patient receives SMS and email
+
+Patient receives an SMS and email with a link to the booking portal.
+
+**SMS:**
+> Welcome James to OpSync! Your account has been created. Please log in using this link: https://portal.opsync.com.au/sydney-gastro/signin?prefillPhone=0401000111
+
+**Email:**
+
+![Booking email sent to patient](/images/created_booking_email.jpg)
+
+---
+
+## Step 3: Patient completes financial consent
+
+1. Patient signs in with their mobile number
+2. Reviews the steps to complete
+3. Reviews costs and signs financial consent
+
+![Patient sign in](/images/booking_sign_in.png)
+
+![Booking overview](/images/booking_start.png)
+
+![Financial consent - costs](/images/booking_financial_consent_1.png)
+
+![Financial consent - confirmation](/images/booking_financial_consent_7.png)
+
+<Note>A PDF is automatically generated and attached to the booking. [View example consent PDF](/files/Example%20Consent.pdf)</Note>
+
+<Note>Patient can continue now or pause and return later.</Note>
+
+![Continue now or later](/images/booking_continue.png)
+
+Once financial consent is complete, the patient receives an email with instructions for procedure consent:
+
+![Step 2 email](/images/email_booking_step_2.jpg)
+
+---
+
+## Step 4: Patient completes procedure consent
+
+1. Patient watches procedure videos
+2. Answers understanding questions
+
+![Procedure consent video](/images/booking_consent.png)
+
+<Note>Patients must watch the entire video before proceeding — they cannot skip ahead.</Note>
+
+![Procedure consent questions](/images/booking_consent_questions.png)
+
+---
+
+## Step 5: Booking complete
+
+The booking is now complete and ready for the procedure.
+
+![Booking complete](/images/booking_complete_1.png)
+
+![Booking complete - preparation info](/images/booking_complete_2.png)
+
+Patient and admin receive a confirmation email with procedure details and preparation instructions:
+
+![Booking confirmed email](/images/email_booking_confirmed_admin.jpg)
+
+---
+
+## Statuses
+
+| Status | When |
+|--------|------|
+| **Confirmed** | Admin creates the booking |
+| **Consented** | Patient completes both consents (done) |
+

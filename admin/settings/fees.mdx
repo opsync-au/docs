@@ -1,0 +1,100 @@
+---
+title: "Fee Configuration"
+description: "Manage fees and financial consent settings"
+icon: "dollar-sign"
+---
+
+Configure procedure fees, ancillary costs, and health fund caps. These settings are used to generate financial consent documents for patients.
+
+![Fee configuration](/images/admin_fees.png)
+
+## Procedure Fees
+
+Base fees and Medicare rebates for each MBS item.
+
+![Procedure fees](/images/admin_fees_procedure_fees.png)
+
+| Column | Description |
+|--------|-------------|
+| **Procedure** | Procedure name |
+| **MBS** | Medicare item number |
+| **Description** | What the item covers |
+| **Fee** | Your fee for this item |
+| **Rebate** | Medicare rebate amount |
+| **Gap** | Out-of-pocket for patient (Fee minus Rebate) |
+
+Click **Add Fee** to add a new procedure fee. Click **Edit** to modify existing fees.
+
+---
+
+## Ancillary Fees
+
+Estimated out-of-pocket costs for anaesthetic and pathology services.
+
+![Ancillary fees](/images/admin_fees_ancillary.png)
+
+| Column | Description |
+|--------|-------------|
+| **Fee Type** | Anaesthetic or Pathology |
+| **Billing Type** | Default or No Gap |
+| **Estimated Range** | Expected cost range (e.g., $200.00 - $300.00) |
+
+<Note>These fee ranges are shown on financial consent documents to give patients an estimate of potential out-of-pocket costs for external providers.</Note>
+
+---
+
+## Hospital Fees
+
+Day surgery fees shown on self-funded financial consent documents.
+
+![Hospital fees](/images/admin_fees_hospital.png)
+
+| Column | Description |
+|--------|-------------|
+| **Location** | Hospital or day surgery name |
+| **Contact** | Phone number |
+| **Day Surgery Fee** | Fee amount or "Contact for quote" |
+
+<Note>These fees are displayed in the self-funded section of financial consent documents. If no fee is set, patients are advised to contact the hospital for a quote.</Note>
+
+---
+
+## Health Fund Caps
+
+Maximum out-of-pocket amounts for specific health funds.
+
+![Health fund caps](/images/admin_fees_health_fund_caps.png)
+
+| Column | Description |
+|--------|-------------|
+| **Health Fund** | Fund name |
+| **Applies To** | Which procedures this cap covers |
+| **Max Out-of-Pocket** | Maximum amount patient pays |
+
+<Note>Fee caps limit the maximum out-of-pocket amount shown on financial consent documents for patients with specific health funds.</Note>
+
+Click **Add Fee Cap** to add a new cap.
+
+---
+
+## Consultation Costs
+
+Consult fees, MBS rebates, and known gap amounts.
+
+![Consultation costs](/images/admin_fees_consultation_costs.png)
+
+---
+
+## Consent Templates
+
+Configure and preview the financial consent documents that patients will see and sign.
+
+![Consent templates](/images/admin_fees_consent_templates.png)
+
+---
+
+## Consent Questions
+
+Questions patients answer before signing consent. These ensure patients understand their financial obligations.
+
+![Consent questions](/images/admin_fees_consent_questions.png)
