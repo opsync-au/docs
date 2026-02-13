@@ -48,7 +48,7 @@
               "admin/settings/specialists",
               "admin/settings/locations",
               "admin/settings/availability",
-              "admin/settings/fees",
+              "admin/settings/funds-and-fees",
               "admin/settings/admin-users"
             ]
           }
