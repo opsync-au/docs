@@ -45,6 +45,7 @@
             "group": "Settings",
             "pages": [
               "admin/settings/general",
+              "admin/settings/procedures",
               "admin/settings/specialists",
               "admin/settings/locations",
               "admin/settings/availability",

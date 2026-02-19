@@ -1,0 +1,83 @@
+---
+title: "Procedures"
+description: "Manage medical procedures, consent steps, preparation files, and fees"
+icon: "clipboard-check"
+---
+
+Manage all procedure configuration in one place — procedure details, consent steps, preparation files, and procedure fees.
+
+![Procedures list](/images/admin_procedures.png)
+
+## Procedure list
+
+The procedures list shows all configured procedures with:
+
+- Procedure name (click to view details)
+- Appointment duration
+- Number of preparation files attached
+
+Use the search bar to find specific procedures.
+
+## Adding a procedure
+
+1. Click **+ Add Procedure**
+2. Enter procedure details:
+   - Procedure name
+   - Duration in minutes
+3. Click **Create**
+
+![Add procedure form](/images/admin_procedure_form_create.png)
+
+## Viewing procedure details
+
+Click a procedure name to open the detail page.
+
+![Procedure detail](/images/admin_procedure.png)
+
+The detail page has the following sections:
+
+### Details
+
+- Procedure name (with edit option)
+- Appointment duration and category
+- Holding bay status
+
+### Consent Steps
+
+The consent steps patients complete during their procedure consent journey. Each step can include:
+
+- A title and description
+- A video URL
+- Questions the patient must acknowledge
+- Optional flag (patient can skip the step)
+
+You can add, edit, reorder, and delete consent steps from this section.
+
+![Edit consent step form](/images/admin_procedure_form.png)
+
+### Preparation Files
+
+PDF attachments sent to patients as part of their procedure preparation (e.g., bowel prep instructions).
+
+### Procedure Fees
+
+MBS item fees associated with this procedure. Each fee shows:
+
+| Column | Description |
+|--------|-------------|
+| **MBS** | Medicare item number |
+| **Description** | What the item covers |
+| **Fee** | Your fee for this item |
+| **Rebate** | Medicare rebate amount |
+| **Gap** | Out-of-pocket for patient (Fee minus Rebate) |
+| **Optional** | Whether the item is optionally included |
+
+Click **Add Fee** to add a new procedure fee. Click **Edit** or **Delete** on existing fees.
+
+![Edit procedure fee form](/images/admin_procedure_form_edit_fee.png)
+
+## Editing a procedure
+
+1. Click the procedure name to open the detail page
+2. Click **Edit** next to the field you want to update (name, duration, consent steps, fees)
+3. Save your changes
